@@ -7,7 +7,6 @@ import (
 	"os"
 )
 
-
 func main() {
 	//gin.SetMode(gin.ReleaseMode)
 
@@ -20,11 +19,11 @@ func main() {
 
 	r := gin.New()
 
-	r.GET("/", func(c * gin.Context) {
+	r.GET("/", func(c *gin.Context) {
 		c.String(http.StatusOK, "Hello World")
 	})
 
-	r.GET("/ping", func(c * gin.Context) {
+	r.GET("/ping", func(c *gin.Context) {
 		c.String(http.StatusOK, "pong")
 	})
 
